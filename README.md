@@ -2,9 +2,6 @@
 
 
 Projeto desenvolvido em FLOWGORITHM com objetivo de praticar os conceitos básicos de logica de programação e algoritmos.
-
-SOBRE O PROJEO:
-
 A calculadora permite realizar operações básicas a partir do número informados pelo usúario.
 
 OPERAÇÕES DISPONÍVEIS:
