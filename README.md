@@ -31,5 +31,3 @@ Acesse o projeto: [Pasta FLOWGORITHM](./FLOWGORITHM)
 ## Autor
 
 Victor Rocha da Silva
-
-Repositório desenvolvido para a disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional.
