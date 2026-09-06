@@ -1,61 +1,61 @@
- Calculadora em C
+ # Desenvolvimento de Algoritmos e Pensamento Computacional
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido para a disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional.
+Este repositório reúne as atividades desenvolvidas na disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional.
 
-O objetivo é desenvolver uma calculadora utilizando a linguagem C, aplicando conceitos básicos de programação e pensamento computacional.
+O objetivo é apresentar os exercícios e projetos desenvolvidos durante a disciplina, utilizando diferentes ferramentas para representar e implementar algoritmos.
 
-## Funcionalidades
+## Projetos
 
-A calculadora possui diferentes operações matemáticas, permitindo ao usuário escolher uma opção através de um menu.
+### Calculadora em C
 
-Entre as operações estão:
+Projeto desenvolvido utilizando a linguagem C, com um menu de opções e diferentes operações matemáticas.
 
-- Soma
-- Subtração
-- Multiplicação
-- Divisão
-- Potência
-- Raiz quadrada
-- Porcentagem
-- Área do quadrado
-- Área do retângulo
-- Área do triângulo
-- Área do círculo
-- Perímetro do quadrado
-- Perímetro do retângulo
-- Circunferência do círculo
-- Conversões de temperatura
+Acesse a pasta:
 
-## Linguagem utilizada
+C
 
-- C
+### Calculadora em Flowgorithm
 
-## Bibliotecas utilizadas
+Projeto desenvolvido utilizando o Flowgorithm, representando a lógica da calculadora por meio de um fluxograma.
 
-- stdio.h
-- math.h
+Acesse a pasta:
 
-## Conceitos utilizados
+Flowgorithm
 
-Durante o desenvolvimento foram utilizados:
+## Tecnologias e ferramentas
 
+- Linguagem C
+- Flowgorithm
+- GitHub
+
+## Conceitos trabalhados
+
+Durante os projetos foram trabalhados conceitos de:
+
+- Algoritmos
+- Pensamento computacional
+- Lógica de programação
 - Variáveis
-- Entrada e saída de dados
-- Operadores matemáticos
+- Operadores
 - Estruturas condicionais
 - Estruturas de repetição
 - Funções
-- Menu de opções
-- Validação de dados
+- Entrada e saída de dados
+- Fluxogramas
 
-## Execução
+## Organização do repositório
 
-O arquivo calculadora.c contém o código-fonte da calculadora.
-
-Para executar o programa, é necessário utilizar um compilador da linguagem C.
-
-## Autor
-
-Victor Rocha da Silva
+```text
+algoritmo_e_pensamento_computacional
+│
+├── C
+│   ├── calculadora.c
+│   └── README.md
+│
+├── Flowgorithm
+│   ├── calculadora.fprg
+│   └── README.md
+│
+└── README.md
