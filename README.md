@@ -35,5 +35,3 @@ Victor Rocha da Silva
 Repositório desenvolvido para a disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional.
 
 Victor Rocha da Silva
-
-Repositório desenvolvido para a disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional.
