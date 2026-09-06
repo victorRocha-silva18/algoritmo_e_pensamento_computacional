@@ -1,87 +1,4 @@
- [22:43, 05/09/2026] Victor: # Calculadora em Flowgorithm
-
-## Sobre o projeto
-
-Este projeto foi desenvolvido para a disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional utilizando o Flowgorithm.
-
-O objetivo é desenvolver uma calculadora por meio de um fluxograma, utilizando conceitos de lógica de programação e algoritmos.
-
-## Funcionamento
-
-Ao iniciar o programa, é apresentado um menu com 20 opções de operações.
-
-O usuário escolhe uma opção e informa os valores necessários para realizar o cálculo. Após a execução da operação, o programa apresenta o resultado.
-
-## Operações disponíveis
-
-### Operações matemáticas
-
-1. Soma
-2. Subtração
-3. Multiplicação
-4. Divisão
-5. Divisão inteira
-6. Módulo
-7. Exponenciação
-8. Raiz quadrada
-
-### Cálculos de áreas e perímetros
-
-9. Área do retângulo
-10. Área do triângulo
-11. Área do quadrado
-12. Área do losango
-13. Circunferência
-14. Perímetro do quadrado
-
-### Conversões
-
-15. Kelvin para Celsius
-16. Fahrenheit para Celsius
-17. Metros por segundo para quilômetros por hora
-
-### Outros cálculos
-
-18. Consumo de combustível
-19. IMC
-20. Logaritmo
-
-## Ferramenta utilizada
-
-- Flowgorithm
-
-## Conceitos utilizados
-
-Durante o desenvolvimento do projeto foram utilizados conceitos de:
-
-- Algoritmos
-- Lógica de programação
-- Fluxogramas
-- Variáveis
-- Entrada de dados
-- Saída de dados
-- Operadores matemáticos
-- Estruturas condicionais
-- Cálculos matemáticos
-
-## Estrutura do programa
-
-O programa utiliza uma estrutura de seleção para identificar a opção escolhida pelo usuário.
-
-Cada opção possui seus próprios valores de entrada, cálculo e resultado.
-
-## Arquivo
-
-O arquivo principal do projeto possui o formato .fprg, utilizado pelo Flowgorithm.
-
-## Objetivo acadêmico
-
-O projeto tem como finalidade praticar a construção de algoritmos e a aplicação da lógica de programação por meio de uma representação visual em fluxograma.
-
-## Autor
-
-Victor Rocha da Silva
-[22:51, 05/09/2026] Victor: # Desenvolvimento de Algoritmos e Pensamento Computacional
+Desenvolvimento de Algoritmos e Pensamento Computacional
 
 ## Sobre o projeto
 
@@ -112,6 +29,10 @@ Acesse o projeto: [Pasta FLOWGORITHM](./FLOWGORITHM)
 - GitHub
 
 ## Autor
+
+Victor Rocha da Silva
+
+Repositório desenvolvido para a disciplina de Desenvolvimento de Algoritmos e Pensamento Computacional.
 
 Victor Rocha da Silva
 
