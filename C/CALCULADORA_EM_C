@@ -1,1 +1,367 @@
+#include <stdio.h>
+#include <math.h>
 
+// Função para mostrar o menu
+void mostrarMenu(){
+    printf("\nEscolha sua opção: \n");
+    printf("1  - Soma\n");
+    printf("2  - Subtracao\n");
+    printf("3  - Multiplicacao\n");
+    printf("4  - Divisao\n");
+    printf("5  - Potencia\n");
+    printf("6  - Raiz quadrada\n");
+    printf("7  - Porcentagem\n");
+    printf("8  - Area do quadrado\n");
+    printf("9  - Perimetro do quadrado\n");
+    printf("10 - Area do retangulo\n");
+    printf("11 - Perimetro do retangulo\n");
+    printf("12 - Area do triangulo\n");
+    printf("13 - Perimetro do triangulo\n");
+    printf("14 - Area do circulo\n");
+    printf("15 - Circunferencia do circulo\n");
+    printf("16 - Celsius para Fahrenheit\n");
+    printf("17 - Fahrenheit para Celsius\n");
+    printf("18 - Celsius para Kelvin\n");
+    printf("19 - Raiz cubica\n");
+    printf("20 - Metros para centimetros\n");
+    printf("0  - Sair\n");
+    printf("============================\n");
+}
+
+/* 1 - Soma */
+double somar(double a, double b) {
+    return a + b;
+}
+
+/* 2 - Subtracao */
+double subtrair(double a, double b) {
+    return a - b;
+}
+
+/* 3 - Multiplicacao */
+double multiplicar(double a, double b) {
+    return a * b;
+}
+
+/* 4 - Divisao */
+double dividir(double a, double b) {
+    return a / b;
+}
+
+/* 5 - Potencia */
+double potencia(double base, double expoente) {
+    return pow(base, expoente);
+}
+
+/* 6 - Raiz quadrada */
+double raizQuadrada(double numero) {
+    return sqrt(numero);
+}
+
+/* 7 - Porcentagem */
+double porcentagem(double valor, double percentual) {
+    return (valor * percentual) / 100.0;
+}
+
+/* 8 - Area do quadrado */
+double areaQuadrado(double lado) {
+    return lado * lado;
+}
+
+/* 9 - Perimetro do quadrado */
+double perimetroQuadrado(double lado) {
+    return 4 * lado;
+}
+
+/* 10 - Area do retangulo */
+double areaRetangulo(double base, double altura) {
+    return base * altura;
+}
+
+/* 11 - Perimetro do retangulo */
+double perimetroRetangulo(double base, double altura) {
+    return 2 * (base + altura);
+}
+
+/* 12 - Area do triangulo */
+double areaTriangulo(double base, double altura) {
+    return (base * altura) / 2.0;
+}
+
+/* 13 - Perimetro do triangulo */
+double perimetroTriangulo(double lado1, double lado2, double lado3) {
+    return lado1 + lado2 + lado3;
+}
+
+/* 14 - Area do circulo */
+double areaCirculo(double raio) {
+    return M_PI * raio * raio;
+}
+
+/* 15 - Circunferencia do circulo */
+double circunferenciaCirculo(double raio) {
+    return 2 * M_PI * raio;
+}
+
+/* 16 - Celsius para Fahrenheit */
+double celsiusParaFahrenheit(double celsius) {
+    return (celsius * 9.0 / 5.0) + 32;
+}
+
+/* 17 - Fahrenheit para Celsius */
+double fahrenheitParaCelsius(double fahrenheit) {
+    return (fahrenheit - 32) * 5.0 / 9.0;
+}
+
+/* 18 - Celsius para Kelvin */
+double celsiusParaKelvin(double celsius) {
+    return celsius + 273.15;
+}
+
+/* 19 - Raiz cubica */
+double raizCubica(double numero) {
+    return cbrt(numero);
+}
+
+/* 20 - Metros para centimetros */
+double metrosParaCentimetros(double metros) {
+    return metros * 100;
+}
+
+/* Funcao principal */
+int main() {
+
+    int opcao;
+    double numero1, numero2, numero3, resultado;
+
+    do {
+
+        mostrarMenu();
+
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+
+            case 1:
+                printf("Digite dois numeros: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                resultado = somar(numero1, numero2);
+
+                printf("Resultado: %.2lf\n", resultado);
+                break;
+
+            case 2:
+                printf("Digite dois numeros: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                resultado = subtrair(numero1, numero2);
+
+                printf("Resultado: %.2lf\n", resultado);
+                break;
+
+            case 3:
+                printf("Digite dois numeros: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                resultado = multiplicar(numero1, numero2);
+
+                printf("Resultado: %.2lf\n", resultado);
+                break;
+
+            case 4:
+                printf("Digite dois numeros: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                if (numero2 == 0) {
+                    printf("Erro: nao e possivel dividir por zero.\n");
+                } else {
+                    resultado = dividir(numero1, numero2);
+                    printf("Resultado: %.2lf\n", resultado);
+                }
+                break;
+
+            case 5:
+                printf("Digite a base e o expoente: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                resultado = potencia(numero1, numero2);
+
+                printf("Resultado: %.2lf\n", resultado);
+                break;
+
+            case 6:
+                printf("Digite um numero: ");
+                scanf("%lf", &numero1);
+
+                if (numero1 < 0) {
+                    printf("Erro: nao existe raiz quadrada real de numero negativo.\n");
+                } else {
+                    resultado = raizQuadrada(numero1);
+                    printf("Resultado: %.2lf\n", resultado);
+                }
+                break;
+
+            case 7:
+                printf("Digite o valor e a porcentagem: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                resultado = porcentagem(numero1, numero2);
+
+                printf("Resultado: %.2lf\n", resultado);
+                break;
+
+            case 8:
+                printf("Digite o lado do quadrado: ");
+                scanf("%lf", &numero1);
+
+                if (numero1 < 0) {
+                    printf("Erro: o lado nao pode ser negativo.\n");
+                } else {
+                    resultado = areaQuadrado(numero1);
+                    printf("Area: %.2lf\n", resultado);
+                }
+                break;
+
+            case 9:
+                printf("Digite o lado do quadrado: ");
+                scanf("%lf", &numero1);
+
+                if (numero1 < 0) {
+                    printf("Erro: o lado nao pode ser negativo.\n");
+                } else {
+                    resultado = perimetroQuadrado(numero1);
+                    printf("Perimetro: %.2lf\n", resultado);
+                }
+                break;
+
+            case 10:
+                printf("Digite a base e a altura: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                if (numero1 < 0 || numero2 < 0) {
+                    printf("Erro: os valores nao podem ser negativos.\n");
+                } else {
+                    resultado = areaRetangulo(numero1, numero2);
+                    printf("Area: %.2lf\n", resultado);
+                }
+                break;
+
+            case 11:
+                printf("Digite a base e a altura: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                if (numero1 < 0 || numero2 < 0) {
+                    printf("Erro: os valores nao podem ser negativos.\n");
+                } else {
+                    resultado = perimetroRetangulo(numero1, numero2);
+                    printf("Perimetro: %.2lf\n", resultado);
+                }
+                break;
+
+            case 12:
+                printf("Digite a base e a altura: ");
+                scanf("%lf %lf", &numero1, &numero2);
+
+                if (numero1 < 0 || numero2 < 0) {
+                    printf("Erro: os valores nao podem ser negativos.\n");
+                } else {
+                    resultado = areaTriangulo(numero1, numero2);
+                    printf("Area: %.2lf\n", resultado);
+                }
+                break;
+
+            case 13:
+                printf("Digite os tres lados: ");
+                scanf("%lf %lf %lf", &numero1, &numero2, &numero3);
+
+                if (numero1 < 0 || numero2 < 0 || numero3 < 0) {
+                    printf("Erro: os lados nao podem ser negativos.\n");
+                } else {
+                    resultado = perimetroTriangulo(numero1, numero2, numero3);
+                    printf("Perimetro: %.2lf\n", resultado);
+                }
+                break;
+
+            case 14:
+                printf("Digite o raio: ");
+                scanf("%lf", &numero1);
+
+                if (numero1 < 0) {
+                    printf("Erro: o raio nao pode ser negativo.\n");
+                } else {
+                    resultado = areaCirculo(numero1);
+                    printf("Area: %.2lf\n", resultado);
+                }
+                break;
+
+            case 15:
+                printf("Digite o raio: ");
+                scanf("%lf", &numero1);
+
+                if (numero1 < 0) {
+                    printf("Erro: o raio nao pode ser negativo.\n");
+                } else {
+                    resultado = circunferenciaCirculo(numero1);
+                    printf("Circunferencia: %.2lf\n", resultado);
+                }
+                break;
+
+            case 16:
+                printf("Digite a temperatura em Celsius: ");
+                scanf("%lf", &numero1);
+
+                resultado = celsiusParaFahrenheit(numero1);
+
+                printf("Temperatura em Fahrenheit: %.2lf F\n", resultado);
+                break;
+
+            case 17:
+                printf("Digite a temperatura em Fahrenheit: ");
+                scanf("%lf", &numero1);
+
+                resultado = fahrenheitParaCelsius(numero1);
+
+                printf("Temperatura em Celsius: %.2lf C\n", resultado);
+                break;
+
+            case 18:
+                printf("Digite a temperatura em Celsius: ");
+                scanf("%lf", &numero1);
+
+                resultado = celsiusParaKelvin(numero1);
+
+                printf("Temperatura em Kelvin: %.2lf K\n", resultado);
+                break;
+
+            case 19:
+                printf("Digite um numero: ");
+                scanf("%lf", &numero1);
+
+                resultado = raizCubica(numero1);
+
+                printf("Raiz cubica: %.2lf\n", resultado);
+                break;
+
+            case 20:
+                printf("Digite o valor em metros: ");
+                scanf("%lf", &numero1);
+
+                resultado = metrosParaCentimetros(numero1);
+
+                printf("Valor em centimetros: %.2lf cm\n", resultado);
+                break;
+
+            case 0:
+                printf("Calculadora encerrada.\n");
+                break;
+
+            default:
+                printf("Opcao invalida. Tente novamente.\n");
+        }
+
+    } while (opcao != 0);
+
+    return 0;
+}
